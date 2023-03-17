@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(lunar.jpeg);
+            background-repeat: no-repeat;
+            background-size: 1280px 720px;
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            position: relative;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            width: 880px;
+            height: 450px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+           <div class="col-md-5 p-md-3">
+            <img src="astronaut.png" alt="" height="410px">
+           </div>
+           <div class="col-md-1">
+           </div>
+            <div class="col-md-6 p-lg-5">
+                <div class="text-center"><h3 style="font-weight: 900; letter-spacing: 1px;">REGISTER</h3></div>
+                <form class="mt-md-4">
+                    <div class="form-row">
+                      <div class="form-group col-sm-6">
+                        <input type="text" class="form-control" id="username-regex" placeholder="Username">
+                        <div id="my-username"></div>
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <input type="password" class="form-control" id="password-regex" placeholder="Password">
+                        <div id="my-password"></div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="phone-regex" placeholder="Telephone">
+                      <div id="my-phone"></div>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="email-regex" placeholder="Email">
+                      <div id="my-email"></div>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="nim-regex" placeholder="Student's Id">
+                      <div id="my-nim"></div>
+                    </div>
+                    <button type="submit" class="btn btn-md btn-block" style="background-color: black; color: #83d5f0; font-weight: 800; margin-top: 27px; border-radius: 20px; letter-spacing: 2px;">SUBMIT</button>
+                    <p style="margin-top: 10px; font-size: 14px; font-weight: bold;">Already have an account? <a href="">Sign In</a></p>
+                  </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
